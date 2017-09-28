@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Tinos');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	background: url('../img/bg.jpeg') center/cover;
+	height: calc( 100vh - 30px);
+	padding: 50px
+}
+.form {
+	width: 45%;
+	padding: 75px 50px;
+	background-color: #DADADC;
+} 
+
+.form__title {
+	font: 42px Cabin, Arial, sans-serif;
+	padding: 5px;
+}
+
+.form__gender {
+	font: 34px Cabin, Arial, sans-serif;
+	text-align: center;
+	margin: 10px 0;
+}
+.form__gender input {
+	margin: 0 5px;
+	height: 15px;
+	width: 15px;
+}
+
+.form__data {
+	text-align: center;
+	padding: 10px;
+	font: 24px Cabin, Arial, sans-serif;
+}
+.form__data input{
+	font: 24px Cabin, Arial, sans-serif;
+	background-color: inherit;
+	text-align: center;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0,0,0,.3);
+	text-align: center;
+	font: 18px/30px Cabin, Arial, sans-serif;
+}
+
+button {
+	padding: 15px 10px;
+	width: 125px;
+	font: 18px/30px Cabin, Arial, sans-serif;
+	margin: 20px 10px;
+	background: linear-gradient(to top, #757f9a, #d7dde8);
+}
+
+.information, .instruction {
+	display: none;
+	font: 16px Tinos, Times, serif;
+	color: #000;
+	background-color: #DADADC;
+}
+
+.information {
+	position: absolute;
+	width: 35%;
+	top: 100px;
+	left: 70px;
+}
+
+.information span {
+	font-weight: bold;
+}
+
+.information p {
+	padding: 20px 10px;
+}
+
+.information ul {
+	list-style-position: inside;
+}
+
+.information li {
+	padding: 5px 10px;
+}
+
+.instruction {
+	position: absolute;
+	width: 35%;
+	top: 180px;
+	left: 70px;
+	font-size: 18px;
+	padding: 20px 10px 60px;	
+}
+
+.instruction span {
+	font-weight: bold;
+}
+
+.result {
+	text-align: center;
+	width: 35%;
+	position: absolute;
+	top: 120px;
+	left: 70px;
+	background-color: #DADADC;
+	padding: 100px 10px;
+	display: none;
+}
+
+/* ------------------- media queries ------------------ */
+
+@media (max-width: 1000px){
+	
+	body {
+		background: #DADADC;
+	}
+	
+	.container {
+		padding: 60px 10px;
+		text-align: center;
+		background: #DADADC;
+	}
+	.form {
+		width: 100%;
+		padding: 20px;
+	} 
+
+	.form__title {
+		font-size: 34px;
+		padding: 5px;
+	}
+	.form__gender {
+		font-size: 22px;
+		margin: 5px 0;
+	}
+	.form__gender input {
+		margin: 0 5px;
+		height: 12px;
+		width: 12px;
+	}
+	.form__data {
+		font-size: 18px;
+	}
+	.form__data input{
+		font-size: 18px;
+	}
+	button {
+		padding: 10px 15px;
+		width: 100px;
+		font-size: 14px;
+		margin: 10px 5px;
+	}
+	.instruction, .information, .result {
+		position: static;
+		padding: 30px 10px;
+		width: 100%;
+		margin: 0 auto;
+		display: none;
+	}
+	.information {
+		text-align: left;
+
+	}
+	.instruction {
+		font-size: 16px;
+		padding: 30px 10px;	
+	}
+	.result {
+		padding: 50px 10px;
+	}
+
+}
